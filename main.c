@@ -1,20 +1,14 @@
 #include <stdio.h>
 
 int main(void) {
-　　　int32_t x;
-
-    double result;
-
+　    int x;
+    double ans;
     scanf("%d", &x);
 
-    int32_t y = (int32_t)((uint32_t)x + 100U);
+    ans = 1.0 / (double)(x + 100);
 
-    result = 1.0 / (double)y;
-
-    printf("%.15f\n", result);/* 課題0404: 入力されたintのデータxに+100したx+100の逆数を，doubleとして計算し，小数点以下15桁として表示するプログラムを書け．*/
-    
+    printf("%.15lf\n", ans); 　/* 課題0404: 入力されたintのデータxに+100したx+100の逆数を，doubleとして計算し，小数点以下15桁として表示するプログラムを書け．*/
 
 
-    
     return 0;
 }
